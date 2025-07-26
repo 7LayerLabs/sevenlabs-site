@@ -2321,9 +2321,115 @@ input, select, textarea {
 		}
 	}
 
+			@media screen and (max-width: 480px) {
+			.derek-photo {
+				width: 80px;
+				height: 80px;
+			}
+		}
+
+	/* Prompt Guidance */
+	.prompt-guidance {
+		margin: 2rem 0;
+	}
+
+	.prompt-guidance h3 {
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
+
+	.guidance-card {
+		background: rgba(255, 255, 255, 0.05);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 8px;
+		padding: 1.5rem;
+		margin-bottom: 1rem;
+		transition: all 0.3s ease;
+	}
+
+	.guidance-card:hover {
+		background: rgba(255, 255, 255, 0.08);
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+
+	.guidance-card h4 {
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 1rem;
+		margin-bottom: 0.8rem;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	.guidance-card p {
+		color: rgba(255, 255, 255, 0.7);
+		font-size: 0.9rem;
+		line-height: 1.5;
+		margin-bottom: 0;
+	}
+
+	.guidance-card.warning {
+		border-left: 4px solid #ff6b6b;
+		background: rgba(255, 107, 107, 0.05);
+	}
+
+	.tweet-reference {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.tweet-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: #1da1f2;
+		text-decoration: none;
+		font-size: 0.85rem;
+		font-weight: 500;
+		transition: color 0.2s ease-in-out;
+	}
+
+	.tweet-link:hover {
+		color: #0d8bd9;
+		text-decoration: underline;
+	}
+
+	.tweet-link .icon {
+		font-size: 1rem;
+	}
+
+	@media screen and (max-width: 736px) {
+		.guidance-card {
+			padding: 1.2rem;
+		}
+
+		.guidance-card h4 {
+			font-size: 0.95rem;
+		}
+
+		.guidance-card p {
+			font-size: 0.85rem;
+		}
+	}
+
 	@media screen and (max-width: 480px) {
-		.derek-photo {
-			width: 80px;
-			height: 80px;
+		.guidance-card {
+			padding: 1rem;
+		}
+
+		.guidance-card h4 {
+			font-size: 0.9rem;
+		}
+
+		.guidance-card p {
+			font-size: 0.8rem;
+		}
+
+		.tweet-link {
+			font-size: 0.8rem;
 		}
 	}
