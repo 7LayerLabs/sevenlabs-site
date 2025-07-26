@@ -1839,7 +1839,7 @@ input, select, textarea {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		width: 100%;
 		max-width: 100%;
-		margin-top: 8rem;
+		margin-top: 2rem;
 		text-align: center;
 	}
 
@@ -1965,6 +1965,13 @@ input, select, textarea {
 		font-weight: 600;
 	}
 
+	/* Special styling for Zach -n- Zoey title */
+	.small-n {
+		font-size: 0.7rem;
+		vertical-align: middle;
+		font-weight: 400;
+	}
+
 	.project-card p {
 		color: rgba(255, 255, 255, 0.7);
 		font-size: 0.85rem;
@@ -2022,6 +2029,30 @@ input, select, textarea {
 		.project-card p {
 			font-size: 0.8rem;
 		}
+	}
+
+	.project-type {
+		display: block;
+		padding: 0.1rem 0.3rem;
+		border-radius: 6px;
+		font-size: 0.55rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.3px;
+		margin-top: 0.8rem;
+		text-align: center;
+	}
+
+	.project-type.creative {
+		background: rgba(138, 43, 226, 0.2);
+		color: rgba(138, 43, 226, 0.9);
+		border: 1px solid rgba(138, 43, 226, 0.3);
+	}
+
+	.project-type.client {
+		background: rgba(255, 165, 0, 0.2);
+		color: rgba(255, 165, 0, 0.9);
+		border: 1px solid rgba(255, 165, 0, 0.3);
 	}
 
 /* Collaboration Services */
