@@ -1,17 +1,18 @@
 'use client';
 
 import React from "react";
+import { layers } from "@/lib/layers";
+import FrameworkTile from "./FrameworkTile";
 
-export default function Hero() {
+export default function Framework() {
   return (
-    <section className="w-full py-20 text-center bg-primary text-white relative">
-      <h1 className="text-5xl font-bold">Built on Seven. Made for Many.</h1>
-      <p className="mt-4 text-lg max-w-xl mx-auto">
-        From raising seven kids to building real-world businesses, I’ve learned that every project needs a solid foundation.
-      </p>
-      <button className="mt-8 px-6 py-3 bg-white text-primary font-semibold rounded">
-        Explore the Framework
-      </button>
+    <section className="py-20 bg-background-dark text-white relative">
+      <h2 className="text-3xl font-bold text-center mb-10">The Seven Layers of Every Great Build</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {layers.map((layer) => (
+          <FrameworkTile key={layer.number} layer={layer} />
+        ))}
+      </div>
       <div className="absolute left-0 bottom-0 w-full overflow-hidden leading-none">
         <svg className="w-full h-16" viewBox="0 0 1440 320">
           <path
